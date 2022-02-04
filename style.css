@@ -69,4 +69,8 @@ svg {
     .inputs {
         margin-top: 35px;
     }
+
+    .inputs div p {
+        font-size: 37px;
+    }
 }
