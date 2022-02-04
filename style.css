@@ -1,0 +1,72 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    /* height: 100vh; */
+    background: inherit;
+    overflow: hidden;
+}
+
+body {
+    background: rgb(136, 136, 139);
+}
+
+#star {
+    display: none;
+}
+
+svg {
+    height: 605px;
+    width: 605px;
+    transform: scale(-1, 1);
+}
+
+.inputs {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 250px;
+    height: 100px;
+}
+
+.inputs div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs div  p {
+    color: white;
+    font-weight: normal;
+    text-shadow: black 1px 5px 5px;
+    font-size: 45px;
+}
+
+.inputs div input {
+    margin: 0px 75px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+    svg {
+        width: 655px;
+        height: 655px;
+    }
+
+    .inputs {
+        margin-top: 35px;
+    }
+}
